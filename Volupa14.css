@@ -126,7 +126,6 @@ header {
     height: 900px;
 
     div {
-        width: 1200px;
         margin: 0 auto;
     }
 
@@ -687,13 +686,12 @@ footer {
         font-size: 13px;
     }
 
-    div {
+    .footer-container1 {
         align-content: start;
         display: flex;
         flex-direction: row;
         padding: 80px 20px;
         padding-inline: 0;
-        width: 1200px;
         margin: 0 auto;
     }
 
@@ -701,7 +699,6 @@ footer {
         display: flex;
         margin: auto;
         flex-direction: column;
-        width: 1200px;
         justify-content: space-between;
     }
 
@@ -878,6 +875,11 @@ footer {
 }
 
 @media screen and (width <=1000px) {
+
+    body{
+        width: 1000px;
+    }
+
     .new-arrival {
         padding-inline-end: 70px;
 
@@ -914,6 +916,7 @@ footer {
         width: auto;
 
         .footer-container1 {
+            padding-top: 40px !important;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -922,11 +925,12 @@ footer {
         }
 
         .footer-container2 {
+            padding-top: 40px !important;
             display: flex;
             flex-direction: row;
             align-items: center;
             padding-left: 40px;
-            padding-block: 50px;
+            padding-block: 10px;
         }
 
         .footer-account {
