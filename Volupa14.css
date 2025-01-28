@@ -102,7 +102,7 @@ header {
   }
 
   img {
-    height: 80%;
+    height: 35%;
   }
 
   div {
@@ -816,35 +816,17 @@ footer {
 
 /* RESPONSIVE */
 
-@media (width <=1040px) and (width >=768px) {
-  .header2 div {
-    display: flex;
-    flex-direction: column;
-    margin-block-end: 50px;
-
-    ul {
-      display: flex;
-      flex-flow: row wrap;
-      gap: 20px;
+@media (width <=1400px) {
+  footer div {
+    .footer-logo {
+      align-items: center;
+      padding-left: 40px;
     }
   }
 }
 
-@media (width <=767px) {
-  .header2 div {
-    display: flex;
-    flex-direction: column;
-    margin-block-end: 50px;
+@media (width <=1300px) {
 
-    ul {
-      display: flex;
-      flex-flow: row wrap;
-      gap: 20px;
-    }
-  }
-}
-
-@media (width <=1346px) and (width >=1041px) {
   .header2 div {
     width: 90%;
     margin-inline: auto;
@@ -859,174 +841,13 @@ footer {
       }
     }
   }
-}
 
-@media (width <=1700px) {
   .new-arrival {
     background: linear-gradient(rgba(255, 255, 255, 0.002),
-        rgba(255, 255, 255, 0.5)),
+        rgba(244, 243, 255, 0.5)),
       url("./img/fondoResponsive.jpg");
     background-size: cover;
   }
-}
-
-@media (width <=1000px) {
-  body {
-    width: 1000px;
-  }
-
-  .new-arrival {
-    padding-inline-end: 70px;
-
-    ul {
-      padding: 0;
-      margin: 0;
-
-      li {
-        padding: 0;
-      }
-    }
-  }
-
-  .new-arrival div {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    padding: 0;
-
-    h1 {
-      font-size: 45px;
-      width: auto;
-      padding: 0;
-    }
-  }
-
-  /*PENDIENTE */
-  .icons {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    width: 1000px;
-
-    div {
-      background-color: transparent;
-
-      &:nth-child(2) {
-        border: 0;
-      }
-
-      p {
-        text-align: center;
-        font-size: 14px;
-        width: 400px;
-        background-color: transparent;
-
-      }
-    }
-  }
-}
-
-@media (width <=1200px) {
-
-  .products {
-    width: auto;
-    
-
-
-    .product-card {
-      p {
-        width: auto;
-      }
-    }
-
-    .product-categories {
-      width: 200px;
-
-      .categories {
-
-        a {
-          width: fit-content;
-        }
-
-      }
-      
-
-    .product-list1{
-      flex-direction: column;
-      width: fit-content;
-
-    }
-
-    .product-list2{
-      flex-direction: column;
-      width: fit-content;
-    }
-    }
-
-
-  }
-
-
-  footer div {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-
-    .footer-container1 {
-      padding-top: 40px !important;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding-left: 40px;
-      padding-block: 10px;
-    }
-
-    .footer-container2 {
-      padding-top: 40px !important;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding-left: 40px;
-      padding-block: 10px;
-    }
-
-    .footer-account {
-      padding: 20px;
-      width: fit-content;
-      padding-inline: 100px;
-
-      h4 {
-        width: 200px;
-      }
-    }
-
-    .footer-links {
-      width: 100%;
-      padding-inline: 120px;
-    }
-
-    .footer-contact {
-      width: 100%;
-    }
-
-    .footer-logo {
-      width: 100%;
-      padding-inline: 120px;
-    }
-  }
-}
-
-@media (width <=1400px) {
-  footer div {
-    .footer-logo {
-      align-items: center;
-      padding-left: 40px;
-    }
-  }
-}
-
-@media (width <=1300px) {
 
   .products {
     width: fit-content;
@@ -1126,7 +947,197 @@ footer {
   }
 }
 
-/*holi lunita <3*/
+@media (width <=1200px) {
+
+
+    .header2 div {
+      ul{
+        li{
+          font-size: small;
+        }
+      }
+    }
+
+  .products {
+    width: auto;
+    .product-card {
+      p {
+        width: auto;
+      }
+    }
+/*ESTOY AQUI*/
+    .product-categories {
+      width: 200px;
+
+      .categories {
+
+        a {
+          width: fit-content;
+        }
+
+      }
+
+
+      .product-list1 {
+        flex-direction: column;
+        width: fit-content;
+
+      }
+
+      .product-list2 {
+        flex-direction: column;
+        width: fit-content;
+      }
+    }
+
+
+  }
+
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+    .footer-container1 {
+      padding-top: 40px !important;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 40px;
+      padding-block: 10px;
+    }
+
+    .footer-container2 {
+      padding-top: 40px !important;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 40px;
+      padding-block: 10px;
+    }
+
+    .footer-account {
+      padding: 20px;
+      width: fit-content;
+      padding-inline: 100px;
+
+      h4 {
+        width: 200px;
+      }
+    }
+
+    .footer-links {
+      width: 100%;
+      padding-inline: 120px;
+    }
+
+    .footer-contact {
+      width: 100%;
+    }
+
+    .footer-logo {
+      width: 100%;
+      padding-inline: 120px;
+    }
+  }
+}
+
+@media (width <=1000px) {
+
+  .header2 div {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 40px;
+
+    img{
+      height: 35%;
+      margin-block: 20px;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 50px;
+
+      li{
+        font-size: 14px;
+      }
+    }
+  }
+
+
+  .new-arrival {
+    padding-inline-end: 70px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0;
+      }
+    }
+  }
+
+  .new-arrival div {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 0;
+
+    h1 {
+      font-size: 45px;
+      width: auto;
+      padding: 0;
+    }
+  }
+
+  .icons {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+    div {
+      background-color: transparent;
+
+      &:nth-child(2) {
+        border: 0;
+      }
+
+      p {
+        text-align: center;
+        font-size: 14px;
+        width: 400px;
+        background-color: transparent;
+
+      }
+    }
+  }
+}
+
+/*holi lunita <3
+
+@media (width <=1346px) and (width >=1041px) {
+  .header2 div {
+    width: 90%;
+    margin-inline: auto;
+
+    ul {
+      margin-inline: 0;
+      gap: 50px;
+
+      li {
+        width: fit-content;
+        margin-inline: 0;
+      }
+    }
+  }
+}
+
+*/
 
 @media (width <=840px) {
   .arrival {
@@ -1136,5 +1147,73 @@ footer {
         height: 400px !important;
       }
     }
+  }
+}
+
+@media (width <=800px) {
+  .header2 div {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 50px;
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 30px;
+
+      li{
+        font-size: 14px;
+        
+        
+      }
+    }
+  }
+}
+
+@media (width<=650px){
+  
+  header{
+    section{
+      ul{
+        gap: 12px;
+        li{
+          text-wrap: nowrap;
+
+        }
+      }
+    }
+  }
+
+  .header2 div {
+    ul{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-areas:
+        "home home home home"
+        "men women shop ."
+        "blog about contact .";
+      gap:0;
+      padding: 0;
+      align-items: center;
+      text-align: center;
+      justify-items: center;
+      
+      li:first-of-type{
+        grid-area: home;
+      }
+
+      li:nth-child(2){ grid-area: men; }
+      li:nth-child(3){ grid-area: women; }
+      li:nth-child(4){ grid-area: shop; }
+      li:nth-child(5){ grid-area: blog; }
+      li:nth-child(6){ grid-area: about; }
+      li:nth-child(7){ grid-area: contact; }
+
+      li{
+        padding-inline: 10px;
+        text-wrap: nowrap;
+      }
+    }
+    
   }
 }
