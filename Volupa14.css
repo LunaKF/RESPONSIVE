@@ -154,7 +154,7 @@ header {
     position: relative;
     left: -220px;
     top: -240px;
-    width: fit-content;
+    width: 700px;
 
     ul {
       list-style: none;
@@ -269,7 +269,7 @@ header {
       div {
         padding: 16px 40px;
         display: block;
-        width: fit-content;
+        width: 700px;
         background-color: white;
 
         i {
@@ -292,7 +292,7 @@ header {
       div {
         padding: 16px 37px;
         display: block;
-        width: fit-content;
+        width: 700px;
         background-color: white;
 
         i {
@@ -328,7 +328,7 @@ header {
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
-  height: fit-content;
+  height: 700px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   background-color: white;
   position: relative;
@@ -739,7 +739,7 @@ footer {
   }
 
   .footer-contact {
-    width: fit-content;
+    width: 700px;
     justify-content: start;
     display: flex;
     flex-direction: column;
@@ -857,7 +857,7 @@ footer {
       gap: 50px;
 
       li {
-        width: fit-content;
+        width: 700px;
         margin-inline: 0;
       }
     }
@@ -872,7 +872,7 @@ footer {
     background-size: cover;
   }
   .products {
-    width: fit-content;
+    width: 700px;
 
     .product-card{
       align-items: center;
@@ -899,7 +899,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: fit-content;
+    height: 700px;
     width: 90%;
     margin-inline: auto;
 
@@ -1009,7 +1009,7 @@ footer {
   }
 
   .products {
-    width: fit-content;
+    width: 700px;
 
     .product-card{
       align-items: center;
@@ -1035,16 +1035,16 @@ footer {
     }
 
   }
+
   footer div {
     display: flex;
     flex-direction: column;
     width: auto;
 
     .footer-container1 {
-      padding-top: 40px !important;
+      padding-top: 40px ;
       display: flex;
       flex-direction: row;
-      align-items: center;
       padding-left: 40px;
       padding-block: 10px;
 
@@ -1054,31 +1054,39 @@ footer {
 
       .footer-logo {
         width: 100%;
-        padding-inline: 120px;
+        padding-left: 120px;
+        ul{
+          margin: 0;
+        }
       }
     }
 
     .footer-container2 {
+      padding-top: 40px ;
       display: flex;
       flex-direction: row;
-      padding-left: 80px;
-      padding-block: 10px;
+      padding-left: 40px;
+      padding-bottom: 10px;
 
       .footer-account {
-        width: fit-content;
-        padding-inline: 100px;
-        margin: 0;
-
-        h4 {
-          width: 200px;
+        width: 100%;
+        ul{
+          margin: 0;
         }
       }
 
       .footer-links {
-        width: fit-content;
-        padding-inline: 120px;
+        width: 100%;
+        padding-left: 120px;
+
+        ul{
+          margin: 0;
+          text-wrap: nonwrap;
+
+        }
       }
     }
+
   }
 }
 
@@ -1105,6 +1113,40 @@ footer {
     }
   }
 
+  .products {
+    width: 700px;
+
+    .product-card{
+      align-items: center;
+      p{
+        width: 100%;
+      }
+    }
+
+    .product-categories{
+      .categories{
+        margin: 0;
+      }
+    }
+
+    .product-list1{
+      width: 700px;
+      justify-content: center;
+      gap: 25px;
+      img{
+        width: 200px;
+      }
+    }
+    .product-list2{
+      width: 700px;
+      justify-content: center;
+      gap: 25px;
+      img{
+        width: 200px;
+      }
+    }
+
+  }
 
   .new-arrival {
     padding-inline-end: 70px;
@@ -1155,30 +1197,15 @@ footer {
       }
     }
   }
+/*socorro*/
+  .footer{
+
+}
 }
 
-/*holi lunita <3
-
-@media (width <=1346px) and (width >=1041px) {
-  .header2 div {
-    width: 90%;
-    margin-inline: auto;
-
-    ul {
-      margin-inline: 0;
-      gap: 50px;
-
-      li {
-        width: fit-content;
-        margin-inline: 0;
-      }
-    }
-  }
-}
-
-*/
 
 @media (width <=840px) {
+/*ESTOY AQUI*/
 
 
   .arrival {
@@ -1192,6 +1219,11 @@ footer {
 }
 
 @media (width <=800px) {
+
+  .products{
+    /*VOY POR AQUI*/
+  }
+
   .header2 div {
     display: flex;
     flex-direction: column;
