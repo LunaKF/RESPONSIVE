@@ -871,7 +871,6 @@ footer {
       url("./img/fondoResponsive.jpg");
     background-size: cover;
   }
-/*arerglar*/
   .products {
     width: fit-content;
 
@@ -993,6 +992,14 @@ footer {
 @media (width <=1200px) {
 
 
+  .new-arrival{
+    div{
+      h1{
+        width:650px ;
+      }
+    }
+  }
+
   .header2 div {
     ul {
       li {
@@ -1002,37 +1009,32 @@ footer {
   }
 
   .products {
-    width: auto;
+    width: fit-content;
 
-    .product-card {
-      p {
+    .product-card{
+      align-items: center;
+      p{
+        margin-inline: 160px;
         width: auto;
       }
     }
 
-    /*ESTOY AQUI*/
-    .product-categories {
-      width: 200px;
-
-      .categories {
-        a {
-          width: fit-content;
-        }
-      }
-
-      .product-list1 {
-        flex-direction: column;
-        width: fit-content;
-
-      }
-
-      .product-list2 {
-        flex-direction: column;
-        width: fit-content;
+    .product-list1{
+      justify-content: center;
+      gap: 0;
+      img{
+        width: 250px;
       }
     }
-  }
+    .product-list2{
+      justify-content: center;
+      gap: 0;
+      img{
+        width: 250px;
+      }
+    }
 
+  }
   footer div {
     display: flex;
     flex-direction: column;
