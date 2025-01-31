@@ -269,7 +269,7 @@ header {
       div {
         padding: 16px 40px;
         display: block;
-        width: 700px;
+        width: fit-content;
         background-color: white;
 
         i {
@@ -292,7 +292,7 @@ header {
       div {
         padding: 16px 37px;
         display: block;
-        width: 700px;
+        width: fit-content;
         background-color: white;
 
         i {
@@ -322,13 +322,14 @@ header {
   }
 }
 
+
 .icons {
   display: flex;
   width: 1200px;
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
-  height: 700px;
+
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   background-color: white;
   position: relative;
@@ -677,8 +678,6 @@ footer {
   width: auto;
   padding-top: 90px;
 
-
-
   .footer-container1 {
     padding-inline-start: 266px;
 
@@ -739,7 +738,6 @@ footer {
   }
 
   .footer-contact {
-    width: 700px;
     justify-content: start;
     display: flex;
     flex-direction: column;
@@ -849,15 +847,14 @@ footer {
 @media (width <=1300px) {
 
   .header2 div {
-    width: 90%;
     margin-inline: auto;
+
 
     ul {
       margin-inline: 0;
       gap: 50px;
 
       li {
-        width: 700px;
         margin-inline: 0;
       }
     }
@@ -871,24 +868,28 @@ footer {
       url("./img/fondoResponsive.jpg");
     background-size: cover;
   }
+
   .products {
     width: 700px;
 
-    .product-card{
+    .product-card {
       align-items: center;
     }
 
-    .product-list1{
+    .product-list1 {
       justify-content: center;
       gap: 70px;
-      img{
+
+      img {
         width: 250px;
       }
     }
-    .product-list2{
+
+    .product-list2 {
       justify-content: center;
       gap: 70px;
-      img{
+
+      img {
         width: 250px;
       }
     }
@@ -899,7 +900,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 700px;
+    height: fit-content;
     width: 90%;
     margin-inline: auto;
 
@@ -955,22 +956,34 @@ footer {
         }
       }
     }
-
-
   }
 
   .icons {
+    justify-content: center;
+    align-items: center;
     width: auto;
-    padding: auto;
+    margin: 0;
+    margin-inline: 80px;
 
     div {
       width: auto;
+      margin-inline: 15px;
+    }
+
+    .money-back {
+      width: auto;
+      margin-inline: 0;
+      padding-inline: 15px;
+    }
+
+    p {
+      font-size: 10px;
     }
   }
 
   .footer {
     .footer-container1 {
-      padding-inline-start: 0;
+      padding-inline: 0;
 
       .footer-contact {
         p {
@@ -987,23 +1000,32 @@ footer {
 
     }
   }
-}
 
-@media (width <=1200px) {
+  .subscribe {
+    form {
+      margin-top: 5px;
 
+      div {
+        width: fit-content;
+      }
 
-  .new-arrival{
-    div{
-      h1{
-        width:650px ;
+      input {
+        width: 350px;
       }
     }
   }
 
-  .header2 div {
-    ul {
-      li {
-        font-size: small;
+}
+
+
+
+@media (width <=1200px) {
+
+
+  .new-arrival {
+    div {
+      h1 {
+        width: 650px;
       }
     }
   }
@@ -1011,25 +1033,29 @@ footer {
   .products {
     width: 700px;
 
-    .product-card{
+    .product-card {
       align-items: center;
-      p{
+
+      p {
         margin-inline: 160px;
         width: auto;
       }
     }
 
-    .product-list1{
+    .product-list1 {
       justify-content: center;
       gap: 0;
-      img{
+
+      img {
         width: 250px;
       }
     }
-    .product-list2{
+
+    .product-list2 {
       justify-content: center;
       gap: 0;
-      img{
+
+      img {
         width: 250px;
       }
     }
@@ -1042,7 +1068,7 @@ footer {
     width: auto;
 
     .footer-container1 {
-      padding-top: 40px ;
+      padding-top: 40px;
       display: flex;
       flex-direction: row;
       padding-left: 40px;
@@ -1055,14 +1081,15 @@ footer {
       .footer-logo {
         width: 100%;
         padding-left: 120px;
-        ul{
+
+        ul {
           margin: 0;
         }
       }
     }
 
     .footer-container2 {
-      padding-top: 40px ;
+      padding-top: 40px;
       display: flex;
       flex-direction: row;
       padding-left: 40px;
@@ -1070,7 +1097,8 @@ footer {
 
       .footer-account {
         width: 100%;
-        ul{
+
+        ul {
           margin: 0;
         }
       }
@@ -1079,7 +1107,7 @@ footer {
         width: 100%;
         padding-left: 120px;
 
-        ul{
+        ul {
           margin: 0;
           text-wrap: nonwrap;
 
@@ -1116,32 +1144,36 @@ footer {
   .products {
     width: 700px;
 
-    .product-card{
+    .product-card {
       align-items: center;
-      p{
+
+      p {
         width: 100%;
       }
     }
 
-    .product-categories{
-      .categories{
+    .product-categories {
+      .categories {
         margin: 0;
       }
     }
 
-    .product-list1{
+    .product-list1 {
       width: 700px;
       justify-content: center;
       gap: 25px;
-      img{
+
+      img {
         width: 200px;
       }
     }
-    .product-list2{
+
+    .product-list2 {
       width: 700px;
       justify-content: center;
       gap: 25px;
-      img{
+
+      img {
         width: 200px;
       }
     }
@@ -1179,10 +1211,14 @@ footer {
     padding: 0;
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0.3, 0.3, 0.3, 0.3),
+      -5px -5px 15px rgba(0.3, 0.3, 0.3, 0.3);
+    margin: auto;
 
     div {
       background-color: transparent;
+
 
       &:nth-child(2) {
         border: 0;
@@ -1197,15 +1233,22 @@ footer {
       }
     }
   }
-/*socorro*/
-  .footer{
 
+  /*socorro*/
+  footer {
+div{
+  .footer-container1{
+    .footer-logo{
+background-color: red;
+    }
+  }
 }
+  }
 }
 
 
 @media (width <=840px) {
-/*ESTOY AQUI*/
+  /*ESTOY AQUI*/
 
 
   .arrival {
@@ -1220,7 +1263,7 @@ footer {
 
 @media (width <=800px) {
 
-  .products{
+  .products {
     /*VOY POR AQUI*/
   }
 
