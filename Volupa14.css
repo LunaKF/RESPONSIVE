@@ -1236,13 +1236,26 @@ footer {
 
   /*socorro*/
   footer {
-div{
-  .footer-container1{
-    .footer-logo{
-background-color: red;
+    div {
+      .footer-container1 {
+
+        .footer-logo {
+
+          p {
+            font-size: 10px;
+            width: 200px;
+          }
+
+          ul {
+            gap: 0;
+
+            img {
+              height: 20px;
+            }
+          }
+        }
+      }
     }
-  }
-}
   }
 }
 
@@ -1264,7 +1277,29 @@ background-color: red;
 @media (width <=800px) {
 
   .products {
-    /*VOY POR AQUI*/
+    width: min-content;
+    .product-card{
+    width: min-content;
+    margin: 0 auto;
+      p{
+        width: 600px;
+        margin: 0;
+      }
+      /*VOY POR AQUI*/
+      .product-categories{
+      .product-list1 {
+        .product-list1-1{
+          background-color: red;
+
+        }
+        }
+      }
+    }
+   }
+  }
+
+  .footer{
+
   }
 
   .header2 div {
