@@ -79,15 +79,17 @@ header {
     display: flex;
     gap: 70px;
     padding: 16.5px;
+    
+    .selected {
+      color: var(--orange-color);
+    }
   }
 
   a {
     color: var(--grey-color);
     text-decoration: none;
-  }
 
-  p .selected {
-    color: var(--orange-color);
+ 
   }
 
   img {
@@ -1364,7 +1366,7 @@ footer {
       ul {
         font-size: 10px;
         gap: 0;
-        
+
         li{
           padding-inline-end: 7px;
         }
@@ -1529,7 +1531,7 @@ footer {
     div{
       margin: 5px;
       padding-inline: 20px !important;
-     
+
       i{
         font-size: 40px;
       }
@@ -1554,7 +1556,7 @@ footer {
 
 }
 
-/* 
+/*
 RESPONSIVE telefonos
 @media (480px <=width <=768px) {
   padding-inline: 5%;
@@ -1563,10 +1565,10 @@ RESPONSIVE telefonos
   text-size-adjust: 10px;
 }
 
- RESPONSIVE  grandes
+RESPONSIVE  grandes
 @media (width >=768px) {
   padding-inline: 5%;
   display: flex;
   width: 100%;
-} 
+}
   */
