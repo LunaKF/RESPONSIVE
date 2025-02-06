@@ -79,7 +79,7 @@ header {
     display: flex;
     gap: 70px;
     padding: 16.5px;
-    
+
     .selected {
       color: var(--orange-color);
     }
@@ -89,7 +89,7 @@ header {
     color: var(--grey-color);
     text-decoration: none;
 
- 
+
   }
 
   img {
@@ -446,13 +446,14 @@ header {
     }
   }
 
+  /*
   .products-categories {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-
+*/
   .categories {
     display: flex;
     justify-content: space-between;
@@ -639,11 +640,12 @@ header {
       width: 75%;
       padding: 20px;
       border: rgba(58, 58, 58, 0.171) 1px solid;
+      border-inline-end: 0;
       margin-bottom: 20px;
     }
 
     i {
-      padding: 20px;
+      padding: 22px;
       color: white;
       background-color: var(--grey-color);
       width: 25%;
@@ -829,8 +831,16 @@ footer {
 }
 
 @media (width <=1300px) {
+
+  header{
+    padding-inline: 20px;
+    section{
+      width: auto;
+    }
+  }
+
   .header2 div {
-    margin-inline: auto;
+    padding-inline: 20px;
 
     ul {
       margin-inline: 0;
@@ -843,10 +853,8 @@ footer {
   }
 
   .new-arrival {
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.002),
-        rgba(244, 243, 255, 0.5)
-      ),
+    background: linear-gradient(rgba(255, 255, 255, 0.002),
+        rgba(244, 243, 255, 0.5)),
       url("./img/fondoResponsive.jpg");
     background-size: cover;
   }
@@ -994,9 +1002,7 @@ footer {
       }
     }
   }
-}
 
-@media (width <=1200px) {
   .new-arrival {
     div {
       h1 {
@@ -1091,6 +1097,14 @@ footer {
 }
 
 @media (width <=1000px) {
+
+  header{
+    section{
+      padding-inline-end: 5px;
+      width: auto;
+    }
+  }
+  
   .header2 div {
     display: flex;
     flex-direction: column;
@@ -1202,7 +1216,31 @@ footer {
     }
   }
 
-  /*socorro*/
+  
+  .stylish {
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      padding-inline: 15px;
+    }
+
+    p {
+      font-size: 15px;
+      text-align: center;
+      padding-inline: 15px;
+    }
+
+    a {
+      padding: 10px;
+
+      i {
+        padding: 2px;
+      }
+    }
+  }
+
   footer {
     div {
       .footer-container1 {
@@ -1225,44 +1263,14 @@ footer {
   }
 }
 
-@media (width <=840px) {
-  /*ESTOY AQUI*/
-
-  .arrival {
-    div {
-      article {
-        width: 500px !important;
-        height: 400px !important;
-      }
-    }
-  }
-}
 
 @media (width <=800px) {
-  .products {
-    width: min-content;
 
-    .product-card {
-      width: min-content;
-      margin: 0 auto;
-
-      p {
-        width: 600px;
-        margin: 0;
-      }
-
-      /*VOY POR AQUI*/
-      .product-categories {
-        .product-list1 {
-          .product-list1-1 {
-            background-color: red;
-          }
-        }
-      }
+  header{
+    section{
+      padding-inline-end: 5px;
+      width: auto;
     }
-  }
-
-  .footer {
   }
 
   .header2 div {
@@ -1280,6 +1288,154 @@ footer {
       }
     }
   }
+
+  .stylish {
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      padding-inline: 15px;
+    }
+
+    p {
+      font-size: 15px;
+      text-align: center;
+      padding-inline: 15px;
+    }
+
+    a {
+      padding: 10px;
+
+      i {
+        padding: 2px;
+      }
+    }
+  }
+
+  .products {
+    width: auto;
+    margin: 50px;
+
+    .product-card {
+      width: auto;
+      margin: 0 auto;
+
+      h6 {
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 10px;
+        width: 90%;
+      }
+    }
+
+    .product-categories {
+      width: auto;
+
+      .categories {
+        width: auto;
+        gap: 0;
+
+        div {
+          width: auto;
+        }
+
+        a {
+          margin: 0;
+          font-size: 10px;
+          padding: 6px;
+          width: auto;
+          text-wrap: nowrap;
+        }
+
+      }
+    }
+
+    .product-list1 {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h6 {
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 10px;
+        margin: 0;
+      }
+
+      img {
+        width: 350px;
+      }
+    }
+
+    .product-list2 {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h6 {
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 10px;
+        margin: 0;
+      }
+
+      img {
+        width: 350px;
+      }
+
+    }
+
+    .see-new-collection {
+      margin-top: 25px;
+
+      a {
+        font-size: 12px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          font-size: 10px;
+          padding-left: 5px;
+        }
+      }
+    }
+
+  }
+
+  .arrival {
+    div {
+      article {
+        width: 500px !important;
+        height: 400px !important;
+      }
+    }
+  }
+
+  footer{
+    div{
+      .footer-container2{
+        .footer-account{
+      
+        }
+    }
+    
+  }
+
+}
 }
 
 @media (width<=650px) {
@@ -1308,6 +1464,7 @@ footer {
       }
     }
   }
+
   .header2 div {
     ul {
       display: grid;
@@ -1356,6 +1513,143 @@ footer {
       }
     }
   }
+
+  .new-arrival {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 700px;
+    background: url("./img/fondoResponsive.jpg");
+    background-position: center;
+    background-size: cover;
+
+    ul {
+      display: none;
+    }
+
+    div {
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .stylish {
+    text-align: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 16px;
+      width: 70%;
+
+    }
+  }
+
+  .products {
+    width: auto;
+    margin: 50px;
+
+    .product-card {
+      width: auto;
+      margin: 0 auto;
+
+      h6 {
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 10px;
+        width: 90%;
+      }
+    }
+
+    .product-categories {
+      width: auto;
+
+      .categories {
+        width: auto;
+        gap: 0;
+
+        div {
+          width: auto;
+        }
+
+        a {
+          margin: 0;
+          font-size: 10px;
+          padding: 6px;
+          width: auto;
+          text-wrap: nowrap;
+        }
+
+      }
+    }
+
+    .product-list1 {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h6 {
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 10px;
+        margin: 0;
+      }
+
+      img {
+        width: 350px;
+      }
+    }
+
+    .product-list2 {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h6 {
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 10px;
+        margin: 0;
+      }
+
+      img {
+        width: 350px;
+      }
+
+    }
+
+    .see-new-collection {
+      margin-top: 25px;
+
+      a {
+        font-size: 12px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          font-size: 10px;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
 }
 
 @media (width<=480px) {
@@ -1367,7 +1661,7 @@ footer {
         font-size: 10px;
         gap: 0;
 
-        li{
+        li {
           padding-inline-end: 7px;
         }
 
@@ -1416,7 +1710,7 @@ footer {
   }
 
   .arrival {
-    margin-bottom:5px;
+    margin-bottom: 5px;
 
     div:nth-of-type(2) {
       grid-template-rows: unset
@@ -1432,20 +1726,23 @@ footer {
           height: 75px;
           padding-left: 10px;
           padding-block: 10px;
-          p{
+
+          p {
             font-size: 8px;
             margin-bottom: 7px;
           }
-          h3{
+
+          h3 {
             font-size: 12px;
             margin-bottom: 7px;
           }
-          a{
+
+          a {
             font-size: 8px;
           }
         }
       }
-      
+
       & article:last-of-type {
         div {
           width: 140px !important;
@@ -1454,15 +1751,17 @@ footer {
           padding-block: 10px;
           text-wrap: nowrap;
 
-          p{
+          p {
             font-size: 8px;
             margin-bottom: 5px;
           }
-          h3{
+
+          h3 {
             font-size: 12px;
             margin-bottom: 5px;
           }
-          a{
+
+          a {
             font-size: 8px;
           }
         }
@@ -1471,6 +1770,7 @@ footer {
 
     & div:last-of-type {
       gap: 35px;
+
       & article:first-of-type {
         div {
           width: 140px !important;
@@ -1479,20 +1779,22 @@ footer {
           padding-block: 10px;
           text-wrap: nowrap;
 
-          p{
+          p {
             font-size: 8px;
             margin-bottom: 5px;
           }
-          h3{
+
+          h3 {
             font-size: 12px;
             margin-bottom: 0;
           }
-          a{
+
+          a {
             font-size: 8px;
           }
         }
       }
-      
+
       & article:last-of-type {
         div {
           width: 140px !important;
@@ -1501,20 +1803,23 @@ footer {
           padding-block: 10px;
           text-wrap: nowrap;
 
-          p{
+          p {
             font-size: 8px;
             margin-bottom: 5px;
           }
-          h3{
+
+          h3 {
             font-size: 12px;
             margin-bottom: 0;
           }
-          a{
+
+          a {
             font-size: 8px;
           }
         }
       }
     }
+
     /*Para las imagenes*/
     div {
       article {
@@ -1524,36 +1829,298 @@ footer {
     }
   }
 
-  .icons{
+  .icons {
     width: auto;
     margin: 2rem;
     margin-top: 5px;
-    div{
+
+    div {
       margin: 5px;
       padding-inline: 20px !important;
 
-      i{
+      i {
         font-size: 40px;
       }
 
-      .bi-currency-dollar{
+      .bi-currency-dollar {
         right: 23px;
       }
-      .bi-circle{
+
+      .bi-circle {
         left: 22px;
       }
 
-      p{
+      p {
         font-size: 10px;
         width: auto;
       }
 
-      h3{
+      h3 {
         font-size: 16px;
       }
     }
   }
 
+  .stylish {
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 45px;
+      text-align: center;
+      padding-inline: 15px;
+    }
+
+    p {
+      font-size: 15px;
+      text-align: center;
+      padding-inline: 15px;
+    }
+
+    a {
+      padding: 10px;
+
+      i {
+        padding: 2px;
+      }
+    }
+  }
+
+  .products {
+    width: auto;
+    margin: 50px;
+
+    .product-card {
+      width: auto;
+      margin: 0 auto;
+
+      h6 {
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 10px;
+        width: 90%;
+      }
+    }
+
+    .product-categories {
+      .categories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Dos columnas de igual ancho */
+        gap: 10px;
+        /* Espaciado entre enlaces */
+        text-align: center;
+
+
+        a {
+          margin: 0;
+          font-size: 10px;
+          padding: 6px;
+          width: auto;
+          text-wrap: nowrap;
+        }
+
+      }
+    }
+
+    .product-list1 {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h6 {
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 10px;
+        margin: 0;
+      }
+
+      img {
+        width: 250px;
+      }
+    }
+
+    .product-list2 {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h6 {
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 10px;
+        margin: 0;
+      }
+
+      img {
+        width: 250px;
+      }
+
+    }
+
+    .see-new-collection {
+      margin-top: 25px;
+
+      a {
+        font-size: 12px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          font-size: 10px;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  .subscribe {
+    form {
+      h3 {
+        font-size: 30px;
+      }
+
+      div {
+        input {
+          width: 75%;
+          padding: 15px;
+        }
+
+        i {
+          padding: 18px;
+        }
+      }
+    }
+
+    ul {
+      padding: 0;
+      width: auto;
+
+      li {
+        width: auto;
+      }
+    }
+  }
+
+  footer {
+    width: auto;
+    padding-inline: 7%;
+    padding-block: 15%;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+
+      .footer-container1 {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+
+        .footer-logo {
+          width: auto;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+
+          p {
+            font-size: 12px;
+            width: 70%;
+            margin: 0;
+            padding: 0;
+            padding-block-start: 15px;
+            text-align: center;
+          }
+
+        }
+
+        .footer-contact {
+          padding: 0;
+          width: auto;
+          text-align: center;
+
+
+          h4 {
+            padding-top: 35px;
+            margin: 0;
+            text-align: center;
+          }
+
+          ul {
+            padding: 0;
+            padding-top: 10px;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            margin-bottom: 5px;
+
+            li {
+              width: auto;
+            }
+
+            i {
+              padding: 5px;
+            }
+          }
+
+        }
+      }
+
+      .footer-container2 {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+
+        .footer-links {
+          width: auto;
+          align-items: center;
+          padding-block: 30px;
+          padding-inline: 0;
+          margin: 0;
+
+          ul {
+            text-align: center;
+          }
+        }
+
+        .footer-account {
+          width: auto;
+          align-items: center;
+          padding-block: 10px;
+          padding-inline: 0;
+          margin: 0;
+
+          ul {
+            text-align: center;
+          }
+        }
+      }
+
+    }
+
+    .footer-copyright {
+      width: auto;
+    }
+  }
 }
 
 /*
