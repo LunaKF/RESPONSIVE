@@ -1,0 +1,22 @@
+{
+  "name": "volupalunakhanji14",
+  "version": "1.0.0",
+  "description": "xd",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/styles.css -o dist/styles.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "luna",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1"
+  },
+  "dependencies": {
+    "volupalunakhanji14": "file:"
+  }
+}
